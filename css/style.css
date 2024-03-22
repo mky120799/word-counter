@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+   
+   
+}
+body {
+  
+    color: white;
+  
+    height: 100vh;
+    width: 100vw;
+}
+.outer{
+    height: 100vh;
+    width: 100vw;
+   
+    background: linear-gradient(-45deg,red,blue,green);
+    background-size: 300% 300%;
+    animation: animate 5s ease infinite;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+label {
+    font-size: larger;
+}
+
+textarea {
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    font-size: medium;
+    background-color: blueviolet;
+    color: white;
+    background: linear-gradient(-45deg,red,blue,green);
+    background-size: 300% 300%;
+    animation: animate 5s ease infinite;
+}
+
+div#start {
+    margin-top: 10px;
+    font-size: larger;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
